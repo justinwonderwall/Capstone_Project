@@ -1,0 +1,216 @@
+foe_code,foe_detailed,foe_narrow,foe_broad,special_course_code,max_contrib_indicator
+60100,Medical Studies,Medical Studies,HEALTH,Any E312 value,Any E392 value
+10103,Statistics,Mathematical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+91901,Economics,Economics and Econometrics,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+80101,Accounting,Accounting,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+80307,Organisation Management,Business and Management,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+80505,Marketing,Sales and Marketing,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+29901,Security Science,Other Information Technology,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+81101,Banking and Finance,"Banking, Finance and Related Fields",MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+20103,Programming,Computer Science,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+10913,Human Biology,Biological Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+39999,"Engineering and Related Technologies, n.e.c.",Other Engineering and Related Technologies,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+10101,Mathematics,Mathematical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+30913,Ocean Engineering,Civil Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+20303,Database Management,Information Systems,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+20305,Systems Analysis and Design,Information Systems,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+10901,Biochemistry and Cell Biology,Biological Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+10301,Physics,Physics and Astronomy,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+19903,Forensic Science,Other Natural and Physical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+90999,"Law, n.e.c.",Law,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+20100,Computer Science,Computer Science,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+30799,"Mechanical and Industrial Engineering and Technology, n.e.c.",Mechanical and Industrial Engineering and Technology,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+80300,Business and Management,Business and Management,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+20300,Information Systems,Information Systems,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+100700,Communication and Media Studies,Communication and Media Studies,CREATIVE ARTS,Any E312 value,Any E392 value
+30903,Structural Engineering,Civil Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+30701,Mechanical Engineering,Mechanical and Industrial Engineering and Technology,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+50100,Agriculture,Agriculture,"AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+90901,Business and Commercial Law,Law,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+90701,Psychology,Behavioural Science,SOCIETY AND CULTURE,Not E312=27,Not E392=8
+90701,Psychology,Behavioural Science,SOCIETY AND CULTURE,27,Not E392=8
+90701,Psychology,Behavioural Science,SOCIETY AND CULTURE,Not E312=27,8
+60701,Dentistry,Dental Studies,HEALTH,Any E312 value,Any E392 value
+90900,Law,Law,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+10500,Chemical Sciences,Chemical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+19907,Pharmacology,Other Natural and Physical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+19901,Medical Science,Other Natural and Physical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+10911,Microbiology,Biological Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+90913,Legal Practice,Law,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+30305,Materials Engineering,Process and Resources Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+31303,Electronic Engineering,Electrical and Electronic Engineering and Technology,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+20113,Networks and Communications,Computer Science,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+90905,Criminal Law,Law,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+10900,Biological Sciences,Biological Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+10999,"Biological Sciences, n.e.c.",Biological Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+31300,Electrical and Electronic Engineering and Technology,Electrical and Electronic Engineering and Technology,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+60119,General Practice,Medical Studies,HEALTH,Any E312 value,Any E392 value
+90903,Constitutional Law,Law,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+90911,Taxation Law,Law,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+80303,Human Resource Management,Business and Management,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+100101,Music,Performing Arts,CREATIVE ARTS,Any E312 value,Any E392 value
+91500,Language and Literature,Language and Literature,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+60101,General Medicine,Medical Studies,HEALTH,Any E312 value,Any E392 value
+89999,"Management and Commerce, n.e.c.",Other Management and Commerce,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+61300,Public Health,Public Health,HEALTH,Any E312 value,Any E392 value
+80315,Project Management,Business and Management,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+50105,Animal Husbandry,Agriculture,"AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+91701,Philosophy,Philosophy and Religious Studies,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+60199,"Medical Studies, n.e.c.",Medical Studies,HEALTH,Any E312 value,Any E392 value
+40101,Architecture,Architecture and Urban Environment,ARCHITECTURE AND BUILDING,Any E312 value,Any E392 value
+99903,Criminology,Other Society and Culture,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+20199,"Computer Science, n.e.c.",Computer Science,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+91103,Legal Studies,Justice and Law Enforcement,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+59999,"Agriculture, Environmental and Related Studies, n.e.c.","Other Agriculture, Environmental and Related Studies","AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+90311,Indigenous Studies,Studies in Human Society,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+39900,Other Engineering and Related Technologies,Other Engineering and Related Technologies,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+20111,Data Structures,Computer Science,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+90909,International Law,Law,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+30300,Process and Resources Engineering,Process and Resources Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+60113,Pathology,Medical Studies,HEALTH,Any E312 value,Any E392 value
+30301,Chemical Engineering,Process and Resources Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+61399,"Public Health, n.e.c.",Public Health,HEALTH,Any E312 value,Any E392 value
+90501,Social Work,Human Welfare Studies and Services,SOCIETY AND CULTURE,Any E312 value,Not E392=8
+90501,Social Work,Human Welfare Studies and Services,SOCIETY AND CULTURE,Any E312 value,8
+69903,Human Movement,Other Health,HEALTH,Any E312 value,Any E392 value
+10909,Genetics,Biological Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+31305,Computer Engineering,Electrical and Electronic Engineering and Technology,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+61303,Environmental Health,Public Health,HEALTH,Any E312 value,Any E392 value
+61311,Epidemiology,Public Health,HEALTH,Any E312 value,Any E392 value
+31301,Electrical Engineering,Electrical and Electronic Engineering and Technology,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+90309,Human Geography,Studies in Human Society,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+10700,Earth Sciences,Earth Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+91523,Literature,Language and Literature,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+19900,Other Natural and Physical Sciences,Other Natural and Physical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+91515,Eastern Asian Languages,Language and Literature,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+80301,Business Management,Business and Management,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+100705,Written Communication,Communication and Media Studies,CREATIVE ARTS,Any E312 value,Any E392 value
+91101,Justice Administration,Justice and Law Enforcement,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+10703,Geology,Earth Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+20119,Artificial Intelligence,Computer Science,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+100799,"Communication and Media Studies, n.e.c.",Communication and Media Studies,CREATIVE ARTS,Any E312 value,Any E392 value
+30100,Manufacturing Engineering and Technology,Manufacturing Engineering and Technology,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+100701,Audio Visual Studies,Communication and Media Studies,CREATIVE ARTS,Any E312 value,Any E392 value
+90101,Political Science,Political Science and Policy Studies,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+30911,Geotechnical Engineering,Civil Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+50900,Environmental Studies,Environmental Studies,"AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+80309,Industrial Relations,Business and Management,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+60501,Pharmacy,Pharmacy,HEALTH,Any E312 value,Any E392 value
+10905,Ecology and Evolution,Biological Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+90599,"Human Welfare Studies and Services, n.e.c.",Human Welfare Studies and Services,SOCIETY AND CULTURE,Any E312 value,Not E392=8
+90599,"Human Welfare Studies and Services, n.e.c.",Human Welfare Studies and Services,SOCIETY AND CULTURE,Any E312 value,8
+100301,Fine Arts,Visual Arts and Crafts,CREATIVE ARTS,Any E312 value,Any E392 value
+31307,Communications Technologies,Electrical and Electronic Engineering and Technology,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+81105,Investment and Securities,"Banking, Finance and Related Fields",MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+80399,"Business and Management, n.e.c.",Business and Management,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+61305,Indigenous Health,Public Health,HEALTH,Any E312 value,Any E392 value
+81100,"Banking, Finance and Related Fields","Banking, Finance and Related Fields",MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+50101,Agricultural Science,Agriculture,"AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+31199,"Geomatic Engineering, n.e.c.",Geomatic Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+30900,Civil Engineering,Civil Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+90305,History,Studies in Human Society,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+90303,Anthropology,Studies in Human Society,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+90313,Gender Specific Studies,Studies in Human Society,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+61307,Health Promotion,Public Health,HEALTH,Any E312 value,Any E392 value
+50999,"Environmental Studies, n.e.c.",Environmental Studies,"AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+90399,"Studies in Human Society, n.e.c.",Studies in Human Society,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+10701,Atmospheric Sciences,Earth Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+99999,"Society and Culture, n.e.c.",Other Society and Culture,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+91903,Econometrics,Economics and Econometrics,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+90103,Policy Studies,Political Science and Policy Studies,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+80311,International Business,Business and Management,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+70303,Education Studies,Curriculum and Education Studies,EDUCATION,Any E312 value,Any E392 value
+90907,Family Law,Law,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+129999,"Mixed Field Programmes, n.e.c.",Other Mixed Field Programmes,MIXED FIELD PROGRAMMES,Any E312 value,Any E392 value
+70105,Teacher Education: Secondary,Teacher Education,EDUCATION,Any E312 value,Any E392 value
+60901,Optometry,Optical Science,HEALTH,Any E312 value,Any E392 value
+70300,Curriculum and Education Studies,Curriculum and Education Studies,EDUCATION,Any E312 value,Any E392 value
+19909,Laboratory Technology,Other Natural and Physical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+100703,Journalism,Communication and Media Studies,CREATIVE ARTS,Any E312 value,Any E392 value
+10711,Hydrology,Earth Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+91599,"Language and Literature, n.e.c.",Language and Literature,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+61301,Occupational Health and Safety,Public Health,HEALTH,Any E312 value,Any E392 value
+30999,"Civil Engineering, n.e.c.",Civil Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+91505,Southern European Languages,Language and Literature,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+70100,Teacher Education,Teacher Education,EDUCATION,Any E312 value,Any E392 value
+91501,English Language,Language and Literature,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+20115,Computer Graphics,Computer Science,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+90301,Sociology,Studies in Human Society,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+70199,"Teacher Education, n.e.c.",Teacher Education,EDUCATION,Any E312 value,Any E392 value
+19999,"Natural and Physical Sciences, n.e.c.",Other Natural and Physical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+10915,Zoology,Biological Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+30907,Water and Sanitary Engineering,Civil Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+39901,Environmental Engineering,Other Engineering and Related Technologies,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+89900,Other Management and Commerce,Other Management and Commerce,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+40105,Landscape Architecture,Architecture and Urban Environment,ARCHITECTURE AND BUILDING,Any E312 value,Any E392 value
+61701,Physiotherapy,Rehabilitation Therapies,HEALTH,Any E312 value,Any E392 value
+89901,"Purchasing, Warehousing and Distribution",Other Management and Commerce,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+80500,Sales and Marketing,Sales and Marketing,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+20307,Decision Support Systems,Information Systems,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+10199,"Mathematical Sciences, n.e.c.",Mathematical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+90100,Political Science and Policy Studies,Political Science and Policy Studies,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+60500,Pharmacy,Pharmacy,HEALTH,Any E312 value,Any E392 value
+30303,Mining Engineering,Process and Resources Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+10709,Soil Science,Earth Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+90307,Archaeology,Studies in Human Society,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+69999,"Health, n.e.c.",Other Health,HEALTH,Any E312 value,Any E392 value
+40103,Urban Design and Regional Planning,Architecture and Urban Environment,ARCHITECTURE AND BUILDING,Any E312 value,Any E392 value
+91503,Northern European Languages,Language and Literature,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+50901,"Land, Parks and Wildlife Management",Environmental Studies,"AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+20399,"Information Systems, n.e.c.",Information Systems,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+91521,Linguistics,Language and Literature,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+30909,Transport Engineering,Civil Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+80313,Public and Health Care Administration,Business and Management,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+69900,Other Health,Other Health,HEALTH,Any E312 value,Any E392 value
+90513,Counselling,Human Welfare Studies and Services,SOCIETY AND CULTURE,Any E312 value,Not E392=8
+90513,Counselling,Human Welfare Studies and Services,SOCIETY AND CULTURE,Any E312 value,8
+60109,Paediatrics,Medical Studies,HEALTH,Any E312 value,Any E392 value
+10903,Botany,Biological Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+10300,Physics and Astronomy,Physics and Astronomy,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+70113,Teacher Education: Special Education,Teacher Education,EDUCATION,Any E312 value,Any E392 value
+90300,Studies in Human Society,Studies in Human Society,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+10907,Marine Science,Biological Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+91519,Translating and Interpreting,Language and Literature,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+61799,"Rehabilitation Therapies, n.e.c.",Rehabilitation Therapies,HEALTH,Any E312 value,Any E392 value
+10799,"Earth Sciences, n.e.c.",Earth Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+10503,Inorganic Chemistry,Chemical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+10303,Astronomy,Physics and Astronomy,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+30901,Construction Engineering,Civil Engineering,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+40303,Building Construction Management,Building,ARCHITECTURE AND BUILDING,Any E312 value,Any E392 value
+70301,Curriculum Studies,Curriculum and Education Studies,EDUCATION,Any E312 value,Any E392 value
+59901,Pest and Weed Control,"Other Agriculture, Environmental and Related Studies","AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+91303,Curatorial Studies,"Librarianship, Information Management and Curatorial Studies",SOCIETY AND CULTURE,Any E312 value,Any E392 value
+10713,Oceanography,Earth Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+50700,Fisheries Sciences,Fisheries Studies,"AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+39903,Biomedical Engineering,Other Engineering and Related Technologies,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+61713,Podiatry,Rehabilitation Therapies,HEALTH,Any E312 value,Any E392 value
+91900,Economics and Econometrics,Economics and Econometrics,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+10705,Geophysics,Earth Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+40199,"Architecture and Urban Environment, n.e.c.",Architecture and Urban Environment,ARCHITECTURE AND BUILDING,Any E312 value,Any E392 value
+120105,Learning Skills Programmes,General Education Programmes,MIXED FIELD PROGRAMMES,Any E312 value,Any E392 value
+90515,Welfare Studies,Human Welfare Studies and Services,SOCIETY AND CULTURE,Any E312 value,Not E392=8
+90515,Welfare Studies,Human Welfare Studies and Services,SOCIETY AND CULTURE,Any E312 value,8
+60700,Dental Studies,Dental Studies,HEALTH,Any E312 value,Any E392 value
+61709,Audiology,Rehabilitation Therapies,HEALTH,Any E312 value,Any E392 value
+61707,Speech Pathology,Rehabilitation Therapies,HEALTH,Any E312 value,Any E392 value
+60103,Surgery,Medical Studies,HEALTH,Any E312 value,Any E392 value
+50199,"Agriculture, n.e.c.",Agriculture,"AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+91703,Religious Studies,Philosophy and Religious Studies,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+79999,"Education, n.e.c.",Other Education,EDUCATION,Any E312 value,Any E392 value
+29999,"Information Technology, n.e.c.",Other Information Technology,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+109999,"Creative Arts, n.e.c.",Other Creative Arts,CREATIVE ARTS,Any E312 value,Any E392 value
+50301,Horticulture,Horticulture and Viticulture,"AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+60107,Obstetrics and Gynaecology,Medical Studies,HEALTH,Any E312 value,Any E392 value
+60105,Psychiatry,Medical Studies,HEALTH,Any E312 value,Any E392 value
+20105,Computational Theory,Computer Science,INFORMATION TECHNOLOGY,Any E312 value,Any E392 value
+61501,Radiography,Radiography,HEALTH,Any E312 value,Any E392 value
+80321,Farm Management and Agribusiness,Business and Management,MANAGEMENT AND COMMERCE,Any E312 value,Any E392 value
+10707,Geochemistry,Earth Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+10100,Mathematical Sciences,Mathematical Sciences,NATURAL AND PHYSICAL SCIENCES,Any E312 value,Any E392 value
+100100,Performing Arts,Performing Arts,CREATIVE ARTS,Any E312 value,Any E392 value
+91513,Southeast Asian Languages,Language and Literature,SOCIETY AND CULTURE,Any E312 value,Any E392 value
+50701,Aquaculture,Fisheries Studies,"AGRICULTURE, ENVIRONMENTAL AND RELATED STUDIES",Any E312 value,Any E392 value
+40100,Architecture and Urban Environment,Architecture and Urban Environment,ARCHITECTURE AND BUILDING,Any E312 value,Any E392 value
+70115,English as a Second Language Teaching,Teacher Education,EDUCATION,Any E312 value,Any E392 value
+30700,Mechanical and Industrial Engineering and Technology,Mechanical and Industrial Engineering and Technology,ENGINEERING AND RELATED TECHNOLOGIES,Any E312 value,Any E392 value
+69901,Nutrition and Dietetics,Other Health,HEALTH,Any E312 value,Any E392 value
