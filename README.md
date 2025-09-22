@@ -14,23 +14,21 @@ The project is organized into the following directory structure:
 |   |-- /raw
 |   |   |-- students.csv
 |   |   |-- government.xlsx
-|   |   |-- ... (other raw data files)
 |   |-- /processed
-|       |-- dim_funding.csv
-|       |-- dim_unit.csv
 |       |-- ... (other processed data files)
 |-- /document
 |   |-- 2024 indexed rates.pdf
     |-- ... (other files)
 |-- /notebook
-|   |-- data_test.ipynb
-    |-- ... (other files)
+|   |-- 1_ETL_Pipeline.ipynb
+    |-- 2_Data_Warehouse.ipynb
+    |-- 3_Data_Modelling.ipynb
 |-- README.md
 ```
 
 * **/data/raw**: Contains the original, unmodified data files.
 * **/data/processed**: Contains the cleaned and transformed data (fact and dimension tables) ready for analysis.
-* **/notebooks**: Contains the Jupyter Notebook with all the ETL code.
+* **/notebooks**: Contains the Jupyter Notebook with ETL, Date warehouse, data modeling code.
 * **README.md**: This file, providing an overview of the project.
 
 ## Data Sources
@@ -39,7 +37,7 @@ The raw data for this project is located in the `/data/raw/` folder and includes
 
 * `students.csv`: Contains basic student enrollment information, such as course IDs, unit IDs, etc.
 * `government.xlsx`: Contains government funding standards and classification information for different fields of education.
-* *(Other potential data sources)*
+
 
 ## ETL Process Overview
 
@@ -47,14 +45,19 @@ All data processing and transformation logic is executed within the `/notebooks/
 
 1. **Extract**: Load data from various source files (CSV, Excel) into Pandas DataFrames.
 2. **Transform**:
-   * **Cleaning**: Handle missing values and duplicates values, standardize column names, Normalnize column values.
+   * **Cleaning**: Handle missing values and duplicates values, standardize column names, and normalize column values.
    * **Split columns**: Derive new columns from existing ones, such as splitting `funding_group` into `funding_nationality` and `funding_type`, and calculating the core business metric `total_funding` using vectorized operations.
    * **Data Type Unification**: Ensure that ID and currency fields are converted to the correct `int` types.
    * **Integration**: Merge the cleaned student data with the government funding data.
-3. **Load**: Based on the Star Schema design principle, create fact and dimension tables and export them as `.csv` files to the `/data/processed/` folder.
+   **Create Error Flag**
+   * **FOE Error**: The FOE codes appear only in the student dataset.
+   * **EFTSL Error**: Overloaded 1 if EFTSL > 3 else 0. 
+3. **Load**: Merge data Based on FOE code, save as `.csv` files to the `/data/processed/` folder.
 
-## Data Model: Fact and Dimension Tables
+## Data Warehouse 
 
+**Fact and Dimension Tables**
+// **adjust based on design**
 To enable efficient and flexible analysis in Power BI, the data is structured as a Star Schema, consisting of a central fact table and multiple dimension tables.
 
 ### Dimension Tables
@@ -77,8 +80,6 @@ The following dimension tables were created for this project:
   * **Key Fields**: `foe_id` (Primary Key), `foe_detailed`, `foe_narrow`, `foe_broad`,`is_funding_cluster_variable`,`special_course_code`,`max_contrib_indicator`.
   * **Notion:** these data from government dataset, as it has more complete information
 
-
-
 ### Fact Table
 
 The fact table stores the **measures** of business events. It contains numeric data that can be aggregated.
@@ -97,6 +98,11 @@ The final output of the ETL process is a series of CSV files located in the `/da
 * `dim_funding.csv`
 * `dim_foe.csv`
 * `fact_table.csv`
+
+## Data Modelling
+
+
+
 
 ## How to Use
 
