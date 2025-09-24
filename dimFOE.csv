@@ -1,0 +1,415 @@
+﻿FOE,FOE_name
+069903,Human Movement
+080100,Accounting
+080101,Accounting
+080300,Business and Management
+080301,Business Management
+080303,Human Resource Management
+080305,Personal Management Training
+080307,Organisation Management
+080309,Industrial Relations
+080311,International Business
+080313,Public and Health Care Administration
+080315,Project Management
+080317,Quality Management
+080319,Hospitality Management
+080321,Farm Management and Agribusiness
+080323,Tourism Management
+080399,"Business and Management, n.e.c."
+080500,Sales and Marketing
+080501,Sales
+080503,Real Estate
+080505,Marketing
+080507,Advertising
+080509,Public Relations
+080599,"Sales and Marketing, n.e.c."
+080700,Tourism
+080701,Tourism
+080900,Office Studies
+080901,Secretarial and Clerical Studies
+080903,Keyboard Skills
+080905,Practical Computing Skills
+080999,"Office Studies, n.e.c."
+081100,"Banking, Finance and Related Fields"
+081101,Banking and Finance
+081103,Insurance and Actuarial Studies
+081105,Investment and Securities
+081199,"Banking, Finance and Related Fields, n.e.c."
+089900,Other Management and Commerce
+089901,"Purchasing, Warehousing and Distribution"
+089903,Valuation
+089999,"Management and Commerce, n.e.c."
+090100,Political Science and Policy Studies
+090101,Political Science
+090103,Policy Studies
+090300,Studies in Human Society
+090301,Sociology
+090303,Anthropology
+090305,History
+090307,Archaeology
+090309,Human Geography
+090311,Indigenous Studies
+090313,Gender Specific Studies
+090399,"Studies in Human Society, n.e.c."
+090900,Law
+090901,Business and Commercial Law
+090903,Constitutional Law
+090905,Criminal Law
+090907,Family Law
+090909,International Law
+090911,Taxation Law
+090913,Legal Practice
+090999,"Law, n.e.c."
+091100,Justice and Law Enforcement
+091101,Justice Administration
+091103,Legal Studies
+091105,Police Studies
+091199,"Justice and Law Enforcement, n.e.c."
+091300,"Librarianship, Information Management and Curatorial Studies"
+091301,Librarianship and Information Management
+091303,Curatorial Studies
+091700,Philosophy and Religious Studies
+091701,Philosophy
+091703,Religious Studies
+091900,Economics and Econometrics
+091901,Economics
+091903,Econometrics
+092100,Sport and Recreation
+092101,Sport and Recreation Activities
+092103,"Sports Coaching, Officiating and Instruction"
+092199,"Sport and Recreation, n.e.c."
+099900,Other Society and Culture
+099901,Family and Consumer Studies
+099903,Criminology
+099905,Security Services
+099999,"Society and Culture, n.e.c."
+100700,Communication and Media Studies
+100701,Audio Visual Studies
+100703,Journalism
+100705,Written Communication
+100707,Verbal Communication
+100799,"Communication and Media Studies, n.e.c."
+110100,Food and Hospitality
+110101,Hospitality
+110103,Food and Beverage Service
+110105,Butchery
+110107,Baking and Pastrymaking
+110109,Cookery
+110111,Food Hygiene
+110199,"Food and Hospitality, n.e.c."
+110300,Personal Services
+110301,Beauty Therapy
+110303,Hairdressing
+110399,"Personal Services, n.e.c."
+120100,General Education Programmes
+120101,General Primary and Secondary Education Programmes
+120103,Literacy and Numeracy Programmes
+120105,Learning Skills Programmes
+120199,"General Education Programmes, n.e.c."
+120300,Social Skills Programs
+120301,Social and Interpersonal Skills Programs
+120303,Survival Skills Programs
+120305,Parental Education Programs
+120399,"Social Skills Programs, n.e.c."
+120500,Employment Skills Programs
+120501,Career Development Programs
+120503,Job Search Skills Programs
+120505,Work Practices Programs
+120599,"Employment Skills Programs, n.e.c."
+129900,Other Mixed Field Programmes
+129999,"Mixed Field Programmes, n.e.c."
+010100,Mathematical Sciences
+010101,Mathematics
+010103,Statistics
+010199,"Mathematical Sciences, n.e.c."
+070100,Teacher Education
+070101,Teacher Education: Early Childhood
+070103,Teacher Education: Primary
+070105,Teacher Education: Secondary
+070107,Teacher-Librarianship
+070109,Teacher Education: Vocational Education and Training
+070111,Teacher Education: Higher Education
+070113,Teacher Education: Special Education
+070115,English as a Second Language Teaching
+070117,Nursing Education Teacher Training
+070199,"Teacher Education, n.e.c."
+070300,Curriculum and Education Studies
+070301,Curriculum Studies
+070303,Education Studies
+079900,Other Education
+079999,"Education, n.e.c."
+091500,Language and Literature
+091501,English Language
+091521,Linguistics
+091523,Literature
+091599,"Language and Literature, n.e.c."
+020100,Computer Science
+020101,Formal Language Theory
+020103,Programming
+020105,Computational Theory
+020107,Compiler Construction
+020109,Algorithms
+020111,Data Structures
+020113,Networks and Communications
+020115,Computer Graphics
+020117,Operating Systems
+020119,Artificial Intelligence
+020199,"Computer Science, n.e.c."
+020300,Information Systems
+020301,Conceptual Modelling
+020303,Database Management
+020305,Systems Analysis and Design
+020307,Decision Support Systems
+020399,"Information Systems, n.e.c."
+029900,Other Information Technology
+029901,Security Science
+029999,"Information Technology, n.e.c."
+040100,Architecture and Urban Environment
+040101,Architecture
+040103,Urban Design and Regional Planning
+040105,Landscape Architecture
+040107,Interior and Environmental Design
+040199,"Architecture and Urban Environment, n.e.c."
+040300,Building
+040301,Building Science and Technology
+040303,Building Construction Management
+040305,Building Surveying
+040307,Building Construction Economics
+040309,Bricklaying and Stonemasonry
+040311,Carpentry and Joinery
+040313,"Ceiling, Wall and Floor Fixing"
+040315,Roof Fixing
+040317,Plastering
+040319,Furnishing Installation
+040321,Floor Coverings
+040323,Glazing
+040325,"Painting, Decorating and Sign Writing"
+040327,Plumbing
+040329,Scaffolding and Rigging
+040399,"Building, n.e.c."
+060500,Pharmacy
+060501,Pharmacy
+060900,Optical Science
+060901,Optometry
+060903,Optical Technology
+060999,"Optical Science, n.e.c."
+061300,Public Health
+061301,Occupational Health and Safety
+061303,Environmental Health
+061305,Indigenous Health
+061307,Health Promotion
+061309,Community Health 
+061311,Epidemiology
+061399,"Public Health, n.e.c."
+061500,Radiography
+061501,Radiography
+061700,Rehabilitation Therapies
+061701,Physiotherapy
+061703,Occupational Therapy
+061705,Chiropractic and Osteopathy
+061707,Speech Pathology
+061709,Audiology
+061711,Massage Therapy
+061713,Podiatry
+061799,"Rehabilitation Therapies, n.e.c."
+061900,Complementary Therapies
+061901,Naturopathy
+061903,Acupuncture
+061905,Traditional Chinese Medicine
+061999,"Complementary Therapies, n.e.c."
+069900,Other Health
+069901,Nutrition and Dietetics
+069905,Paramedical Studies
+069907,First Aid
+069999,"Health, n.e.c."
+100100,Performing Arts
+100101,Music
+100103,Drama and Theatre Studies
+100105,Dance
+100199,"Performing Arts, n.e.c."
+100300,Visual Arts and Crafts
+100301,Fine Arts
+100303,Photography
+100305,Crafts
+100307,Jewellery Making
+100309,Floristry
+100399,"Visual Arts and Crafts, n.e.c."
+100500,Graphic and Design Studies
+100501,Graphic Arts and Design Studies
+100503,Textile Design
+100505,Fashion Design
+100599,"Graphic and Design Studies, n.e.c."
+109900,Other Creative Arts
+109999,"Creative Arts, n.e.c."
+060300,Nursing
+060301,General Nursing
+060303,Midwifery
+060305,Mental Health Nursing
+060307,Community Nursing
+060309,Critical Care Nursing
+060311,Aged Care Nursing
+060313,Palliative Care Nursing
+060315,Mothercraft Nursing and Family and Child Health Nursing
+060399,"Nursing, n.e.c."
+091503,Northern European Languages
+091505,Southern European Languages
+091507,Eastern European Languages
+091509,Southwest Asian and North African Languages
+091511,Southern Asian Languages
+091513,Southeast Asian Languages
+091515,Eastern Asian Languages
+091517,Australian Indigenous Languages
+091519,Translating and Interpreting
+010300,Physics and Astronomy
+010301,Physics
+010303,Astronomy
+010500,Chemical Sciences
+010501,Organic Chemistry
+010503,Inorganic Chemistry
+010599,"Chemical Sciences, n.e.c."
+010700,Earth Sciences
+010701,Atmospheric Sciences
+010703,Geology
+010705,Geophysics
+010707,Geochemistry
+010709,Soil Science
+010711,Hydrology
+010713,Oceanography
+010799,"Earth Sciences, n.e.c."
+010900,Biological Sciences
+010901,Biochemistry and Cell Biology
+010903,Botany
+010905,Ecology and Evolution
+010907,Marine Science
+010909,Genetics
+010911,Microbiology
+010913,Human Biology
+010915,Zoology
+010999,"Biological Sciences, n.e.c."
+019900,Other Natural and Physical Sciences
+019901,Medical Science
+019903,Forensic Science
+019905,Food Science and Biotechnology
+019907,Pharmacology
+019909,Laboratory Technology
+019999,"Natural and Physical Sciences, n.e.c."
+030100,Manufacturing Engineering and Technology
+030101,Manufacturing Engineering
+030103,Printing
+030105,Textile Making
+030107,Garment Making
+030109,Footwear Making
+030111,Wood Machining and Turning
+030113,Cabinet Making
+030115,Furniture Upholstery and Renovation
+030117,Furniture Polishing
+030199,"Manufacturing Engineering and Technology, n.e.c."
+030300,Process and Resources Engineering
+030301,Chemical Engineering
+030303,Mining Engineering
+030305,Materials Engineering
+030307,Food Processing Technology
+030399,"Process and Resources Engineering, n.e.c."
+030500,Automotive Engineering and Technology
+030501,Automotive Engineering
+030503,Vehicle Mechanics
+030505,Automotive Electrics and Electronics
+030507,Automotive Vehicle Refinishing
+030509,Automotive Body Construction
+030511,Panel Beating
+030513,Upholstery and Vehicle Trimming
+030515,Automotive Vehicle Operations
+030599,"Automotive Engineering and Technology, n.e.c."
+030700,Mechanical and Industrial Engineering and Technology
+030701,Mechanical Engineering
+030703,Industrial Engineering
+030705,Toolmaking
+030707,"Metal Fitting, Turning and Machining"
+030709,Sheetmetal Working
+030711,Boilermaking and Welding
+030713,Metal Casting and Patternmaking
+030715,Precision Metalworking
+030717,Plant and Machine Operations
+030799,"Mechanical and Industrial Engineering and Technology, n.e.c."
+030900,Civil Engineering
+030901,Construction Engineering
+030903,Structural Engineering
+030905,Building Services Engineering
+030907,Water and Sanitary Engineering
+030909,Transport Engineering
+030911,Geotechnical Engineering
+030913,Ocean Engineering
+030999,"Civil Engineering, n.e.c."
+031100,Geomatic Engineering
+031101,Surveying
+031103,Mapping Science
+031199,"Geomatic Engineering, n.e.c."
+031300,Electrical and Electronic Engineering and Technology
+031301,Electrical Engineering
+031303,Electronic Engineering
+031305,Computer Engineering
+031307,Communications Technologies
+031309,Communications Equipment Installation and Maintenance
+031311,Powerline Installation and Maintenance
+031313,"Electrical Fitting, Electrical Mechanics"
+031315,Refrigeration and Air Conditioning Mechanics
+031317,Electronic Equipment Servicing
+031399,"Electrical and Electronic Engineering and Technology, n.e.c."
+031500,Aerospace Engineering and Technology
+031501,Aerospace Engineering
+031503,Aircraft Maintenance Engineering
+031505,Aircraft Operation
+031507,Air Traffic Control
+031599,"Aerospace Engineering and Technology, n.e.c."
+031700,Maritime Engineering and Technology
+031701,Maritime Engineering
+031703,Marine Construction
+031705,Marine Craft Operation
+031799,"Maritime Engineering and Technology, n.e.c."
+039900,Other Engineering and Related Technologies
+039901,Environmental Engineering
+039903,Biomedical Engineering
+039905,Fire Technology
+039907,Rail Operations
+039909,Cleaning
+039999,"Engineering and Related Technologies, n.e.c."
+050900,Environmental Studies
+050901,"Land, Parks and Wildlife Management"
+050999,"Environmental Studies, n.e.c."
+059900,"Other Agriculture, Environmental and Related Studies"
+059901,Pest and Weed Control
+059999,"Agriculture, Environmental and Related Studies, n.e.c."
+050100,Agriculture
+050101,Agricultural Science
+050103,Wool Science
+050105,Animal Husbandry
+050199,"Agriculture, n.e.c."
+050300,Horticulture and Viticulture
+050301,Horticulture
+050303,Viticulture
+050500,Forestry Studies
+050501,Forestry Studies
+050700,Fisheries Studies
+050701,Aquaculture
+050799,"Fisheries Studies, n.e.c."
+060113,Pathology
+060100,Medical Studies
+060101,General Medicine
+060103,Surgery
+060105,Psychiatry
+060107,Obstetrics and Gynaecology
+060109,Paediatrics
+060111,Anaesthesiology
+060115,Radiology
+060117,Internal Medicine
+060119,General Practice
+060199,"Medical Studies, n.e.c."
+060700,Dental Studies
+060701,Dentistry
+060703,Dental Assisting
+060705,Dental Technology
+060799,"Dental Studies, n.e.c."
+061100,Veterinary Studies
+061101,Veterinary Science
+061103,Veterinary Assisting
+061199,"Veterinary Studies, n.e.c."
