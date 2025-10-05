@@ -1,0 +1,11 @@
+fee_code,funding_type,student_type
+1,C'wealth Supported,Domestic
+2,Onshore,International
+3,RTP,Domestic
+4,Onshore Exchange,International
+5,Study Abroad,International
+6,Fee-Paying,Domestic
+7,Non-Award & Others,Domestic
+8,0,0
+9,RTP,International
+10,Offshore,International
