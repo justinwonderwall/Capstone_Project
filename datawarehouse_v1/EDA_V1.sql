@@ -64,7 +64,7 @@ ORDER BY total_student_contribution DESC;
 --- check the percentage ---
 
 WITH base AS (
-  SELECT enrol_id, foe_code, eftsl, enrol_unit,
+  SELECT foe_code, eftsl, enrol_unit,
          commonwealth_contribution AS gov,
          student_contribution     AS stu,
          (commonwealth_contribution + student_contribution) AS total_csp,
@@ -98,29 +98,5 @@ WHERE running_total >= 0.60 * grand_total
 ORDER BY rn
 LIMIT 1;
 
-
---- check the outliner FOE --
-
---
-WITH base AS (
-    SELECT e.foe_code,
-           e.commonwealth_contribution AS gov_csp,
-           e.eftsl
-    FROM fact.enrolment_2024 e
-    WHERE e.eftsl > 3
-)
-SELECT b.foe_code,
-       d.foe_name,
-       c.funding_cluster,
-       COUNT(*) AS n_rows,
-       SUM(b.gov_csp) AS total_gov_csp,
-       AVG(b.gov_csp) AS avg_gov_csp_per_student,
-       AVG(b.eftsl) AS avg_eftsl
-FROM base b
-LEFT JOIN dim.foe d ON b.foe_code = d.foe_code
-LEFT JOIN raw.csp_allocation_2024 c ON b.foe_code = c.foe_code
-GROUP BY b.foe_code, d.foe_name, c.funding_cluster
-ORDER BY total_gov_csp DESC
-LIMIT 10;
 
 
