@@ -68,17 +68,15 @@ The following dimension tables were created for this project:
 
 * **`dim_course`**: **Course Dimension Table**
   * **Purpose**: Describes the detailed information for Course.
-  * **Key Fields**: `course_info_id` (Primary Key), `couser_type_borad`, `unit_id`, `unit_level_code`, `unit_level_name`.
+  * **Key Fields**: `course_id` (Primary Key), `couser_type_borad`.
 
-
-* **`dim_funding`**: **Funding Dimension Table**
-  * **Purpose**: Describes the detailed information for each Field of Course.
-  * **Key Fields**: `funding_id` (Primary Key), `funding_cluster`, `funding_nation`, `funding_type`.
+* **`dim_fundingcluster`**: **Funding Dimension Table**
+  * **Purpose**: Describes the detailed information for each funding cluster.
+  * **Key Fields**: `cluster_code` (Primary Key), `funding_cluster`.
 
 * **`dim_foe`**: **FOE Dimension Table**
   * **Purpose**: Describes FOE information.
-  * **Key Fields**: `foe_id` (Primary Key), `foe_detailed`, `foe_narrow`, `foe_broad`,`is_funding_cluster_variable`,`special_course_code`,`max_contrib_indicator`.
-  * **Notion:** these data from government dataset, as it has more complete information
+  * **Key Fields**: `foe_code` (Primary Key), `FOE_name`.
 
 ### Fact Table
 
@@ -86,23 +84,26 @@ The fact table stores the **measures** of business events. It contains numeric d
 
 * **`fact_table`**: **Student Enrollment Fact Table**
   * **Purpose**: Records the **quantifiable facts** of the core event of [need more infro] in a course unit.
-  * **Key Fields**: `course_id`,`course_info_id` (Foreign Key), `funding_id` (Foreign Key), `foe_code`,`foe_id` (Foreign Key), `eftsl_2024` (Measure), `max_student_contrib_2024`(Measure),
-  `commonwealth_contrib_2024`(Measure), `max_student_contrib_gf_2024`(Measure),
-  `commonwealth_contrib_gf_2024`(Measure), `stud_payment` (Measure),`gov_payment` (Measure),`total_payment` (Measure).
+  * **Key Fields**: `course_id`, (Foreign Key), `cluster_code` (Foreign Key), `foe_code`,(Foreign Key), `eftsl_2024` (Measure), `CSP_student_contribution`(Measure),
+  `CSP_commonwealth_contribution`(Measure).
 
 ## Final Deliverables
 
 The final output of the ETL process is a series of CSV files located in the `/data/processed/` folder. These files are clean, structured, and ready to be imported into Power BI for modeling and analysis.
 
 * `dim_course.csv`
-* `dim_funding.csv`
+* `dim_.csv`
 * `dim_foe.csv`
 * `fact_table.csv`
 
 ## Data Modelling
 
 
-
+## Data Visualization
+The data visualization was built by Power BI, which connects the PostgreSQL database automated.
+Including：
+**2024 EFTSL Overview:** Focuses on the total student Equivalent Full-Time Student Load (EFTSL) by key dimensions such as nationality, Degree Level, and Fee Type. This dashboard provides a comprehensive and interactive view of the EFTSL distribution. 
+**2024 CSP Student Overview:** Focuses on students in Commonwealth Supported Place, visualizing Government Payment distribution by Course, unit, FOE, and Funding Cluster. This is primary     dashboard to identify key patterns and discrepancies between internal payment data and external data sources.   
 
 ## How to Use
 
@@ -111,6 +112,5 @@ The final output of the ETL process is a series of CSV files located in the `/da
 3. Open and run all cells in the `/notebooks/data_test.ipynb` notebook in sequential order.
 4. The processed data will be automatically saved in the `/data/processed/` folder.
 5. In Power BI, use "Get Data" -> "Text/CSV" to import these processed files and build the data model based on the fact and dimension table relationships.
-"""
 
 
