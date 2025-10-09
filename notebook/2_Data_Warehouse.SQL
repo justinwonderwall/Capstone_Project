@@ -3,7 +3,6 @@
 
 DROP TABLE IF EXISTS fact_table CASCADE;
 DROP TABLE IF EXISTS dim_foe CASCADE;
-DROP TABLE IF EXISTS dim_fees CASCADE;
 DROP TABLE IF EXISTS dim_fundingcluster CASCADE;
 DROP TABLE IF EXISTS dim_course CASCADE;
 
@@ -13,13 +12,6 @@ DROP TABLE IF EXISTS dim_course CASCADE;
 CREATE TABLE dim_foe (
     foe_code INTEGER PRIMARY KEY,
     foe_name VARCHAR(255) NOT NULL
-);
-
--- Fees Dimension Table
-CREATE TABLE dim_fees (
-    fee_code INTEGER PRIMARY KEY,
-    funding_type VARCHAR(50) NOT NULL,
-    funding_nation VARCHAR(50) NOT NULL
 );
 
 -- Funding Cluster Dimension Table
@@ -39,7 +31,6 @@ CREATE TABLE dim_course (
 -- CSP Student Funding Fact Table
 CREATE TABLE fact_table (
     foe_code INTEGER NOT NULL,
-    fee_code INTEGER,
     cluster_code INTEGER,
     course_id INTEGER,
     eftsl DECIMAL(10,4) NOT NULL,
@@ -49,8 +40,6 @@ CREATE TABLE fact_table (
     -- Foreign Key Constraints
     CONSTRAINT fk_fact_foe 
         FOREIGN KEY (foe_code) REFERENCES dim_foe(foe_code),
-    CONSTRAINT fk_fact_fees 
-        FOREIGN KEY (fee_code) REFERENCES dim_fees(fee_code),
     CONSTRAINT fk_fact_cluster 
         FOREIGN KEY (cluster_code) REFERENCES dim_fundingcluster(cluster_code),
     CONSTRAINT fk_fact_course 
@@ -66,12 +55,6 @@ CREATE TABLE fact_table (
 -- Import FOE Dimension
 COPY dim_foe
 FROM '/Users/justin/Desktop/Workplace/Work/uwa/2025-s2/5553/Project/data test/data/processed/dim_foe.csv'
-DELIMITER ','
-CSV HEADER;
-
--- Import Fees Dimension
-COPY dim_fees
-FROM '/Users/justin/Desktop/Workplace/Work/uwa/2025-s2/5553/Project/data test/data/processed/dim_fees.csv'
 DELIMITER ','
 CSV HEADER;
 
