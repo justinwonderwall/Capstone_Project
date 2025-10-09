@@ -1,0 +1,202 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UWA CSP Reconciliation – Cluster × FOE (MVP)</title>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji; margin: 24px; color: #111827; }
+    h1 { margin: 0 0 12px 0; }
+    .grid { display: grid; gap: 12px; }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .card { border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px 14px; background: #fff; }
+    .kpi { font-size: 18px; font-weight: 600; }
+    .muted { color: #6b7280; font-size: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border: 1px solid #e5e7eb; padding: 8px; text-align: right; }
+    th { background: #f9fafb; text-align: left; }
+    .row-ok { background: #ecfdf5; }       /* green-50 */
+    .row-watch { background: #fffbeb; }    /* amber-50 */
+    .row-check { background: #fef2f2; }    /* red-50 */
+    .controls { display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    input, select { width: 100%; height: 36px; border: 1px solid #d1d5db; border-radius: 8px; padding: 0 10px; }
+    .legend { display:flex; gap:12px; align-items:center; font-size:12px; color:#6b7280;}
+    .dot { width:10px; height:10px; border-radius:50%; display:inline-block;}
+    .blue { background:#60a5fa; } .red { background:#f87171; }
+    .right { text-align:right; }
+    .small { font-size:12px; color:#6b7280; }
+    @media (max-width: 900px) { .grid-4 { grid-template-columns: 1fr 1fr; } .controls{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <h1>UWA CSP Reconciliation – Cluster × FOE (2024)</h1>
+
+  <div id="app"></div>
+
+  <!-- React, ReactDOM, Babel, Recharts UMD -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+
+  <script type="text/babel">
+    const { useMemo, useState } = React;
+    const { ResponsiveContainer, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend } = Recharts;
+
+    function numberFormat(n) {
+      try { return n.toLocaleString(); } catch { return n; }
+    }
+
+    function App() {
+      // Seed data (replace with your export if needed)
+      const seed = [
+        { cluster: "Cluster 4", foe_code: "060100", foe_name: "Medical Studies", eftsl: 41.78, internal: 19050066, gov_rate: 30495 },
+        { cluster: "Cluster 5", foe_code: "070100", foe_name: "Education",       eftsl: 120.25, internal: 3480000,  gov_rate: 9500  },
+        { cluster: "Cluster 2", foe_code: "010101", foe_name: "Mathematics",      eftsl: 12.67, internal: 6238199,  gov_rate: 18903 },
+        { cluster: "Cluster 1", foe_code: "090701", foe_name: "Computing",        eftsl: 98.40, internal: 2260000,  gov_rate: 22950 },
+      ];
+
+      const [thresholdPct, setThresholdPct] = useState(2);
+      const [clusterFilter, setClusterFilter] = useState("");
+      const [search, setSearch] = useState("");
+
+      const clusters = Array.from(new Set(seed.map(r => r.cluster)));
+
+      const rows = useMemo(() => {
+        return seed
+          .filter(r => (clusterFilter ? r.cluster === clusterFilter : true))
+          .filter(r => {
+            const q = search.trim().toLowerCase();
+            if (!q) return true;
+            return (
+              r.foe_code.toLowerCase().includes(q) ||
+              r.foe_name.toLowerCase().includes(q) ||
+              r.cluster.toLowerCase().includes(q)
+            );
+          })
+          .map(r => {
+            const govIndexed = r.eftsl * r.gov_rate;
+            const deltaAbs = r.internal - govIndexed;
+            const deltaPct = govIndexed === 0 ? 0 : (deltaAbs / govIndexed) * 100;
+            const status = Math.abs(deltaPct) >= thresholdPct ? "Check" : Math.abs(deltaPct) >= 1 ? "Watch" : "OK";
+            return { ...r, govIndexed, deltaAbs, deltaPct, status };
+          });
+      }, [seed, thresholdPct, clusterFilter, search]);
+
+      const totals = useMemo(() => {
+        const tEftsl = rows.reduce((a, r) => a + r.eftsl, 0);
+        const tInternal = rows.reduce((a, r) => a + r.internal, 0);
+        const tGov = rows.reduce((a, r) => a + r.govIndexed, 0);
+        const tDelta = tInternal - tGov;
+        const tPct = tGov === 0 ? 0 : (tDelta / tGov) * 100;
+        return { tEftsl, tInternal, tGov, tDelta, tPct };
+      }, [rows]);
+
+      const chartData = rows.map(r => ({ name: r.cluster + " / " + r.foe_code, internal: r.internal, gov: r.govIndexed }));
+
+      return (
+        <div className="grid" style={{ gap: 16 }}>
+          <div className="card">
+            <div className="controls">
+              <div>
+                <div className="small">Funding Cluster</div>
+                <select value={clusterFilter} onChange={e => setClusterFilter(e.target.value)}>
+                  <option value="">All Clusters</option>
+                  {clusters.map(c => (<option key={c} value={c}>{c}</option>))}
+                </select>
+              </div>
+              <div>
+                <div className="small">Search (FOE / Name / Cluster)</div>
+                <input value={search} onChange={e => setSearch(e.target.value)} placeholder="e.g. 060100 / Medical" />
+              </div>
+              <div>
+                <div className="small">Variance Threshold (%)</div>
+                <input type="number" step="0.5" min="0" value={thresholdPct} onChange={e => setThresholdPct(Number(e.target.value)||0)} />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-4">
+            <div className="card">
+              <div className="muted">Total EFTSL</div>
+              <div className="kpi">{totals.tEftsl.toFixed(2)}</div>
+            </div>
+            <div className="card">
+              <div className="muted">Internal Gov $</div>
+              <div className="kpi">${numberFormat(totals.tInternal)}</div>
+            </div>
+            <div className="card">
+              <div className="muted">Gov (Indexed) $</div>
+              <div className="kpi">${numberFormat(totals.tGov)}</div>
+            </div>
+            <div className="card">
+              <div className="muted">Δ Total</div>
+              <div className="kpi">${numberFormat(totals.tDelta)} <span className="small">(Δ% {totals.tPct.toFixed(2)}%)</span></div>
+            </div>
+          </div>
+
+          <div className="card" style="height:420px;">
+            <div className="muted" style="margin-bottom:6px;">Internal vs Gov Indexed (by Cluster/FOE)</div>
+            <div className="legend" style="margin-bottom:8px;">
+              <span className="dot blue"></span> Internal &nbsp;&nbsp;<span className="dot red"></span> Gov Indexed
+            </div>
+            <div style={{ width: '100%', height: 360 }}>
+              <ResponsiveContainer>
+                <BarChart data={chartData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" hide />
+                  <YAxis />
+                  <Tooltip formatter={(v) => `$${numberFormat(v)}`} />
+                  <Legend />
+                  <Bar dataKey="internal" name="Internal Gov $" fill="#60a5fa" />
+                  <Bar dataKey="gov" name="Gov Indexed $" fill="#f87171" />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="muted" style="margin-bottom:8px;">FOE Reconciliation Table</div>
+            <div style="overflow-x:auto;">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Cluster</th>
+                    <th>FOE Code</th>
+                    <th>FOE Name</th>
+                    <th class="right">Total EFTSL</th>
+                    <th class="right">Internal Gov $</th>
+                    <th class="right">Gov Indexed $</th>
+                    <th class="right">Δ $</th>
+                    <th class="right">Δ %</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {rows.map((r, i) => {
+                    const cls = r.status === "Check" ? "row-check" : r.status === "Watch" ? "row-watch" : "row-ok";
+                    return (
+                      <tr key={i} className={cls}>
+                        <td style={{textAlign:'left'}}>{r.cluster}</td>
+                        <td style={{textAlign:'left'}}>{r.foe_code}</td>
+                        <td style={{textAlign:'left'}}>{r.foe_name}</td>
+                        <td>{r.eftsl.toFixed(2)}</td>
+                        <td>${numberFormat(r.internal)}</td>
+                        <td>${numberFormat(r.govIndexed)}</td>
+                        <td>${numberFormat(r.deltaAbs)}</td>
+                        <td>{r.deltaPct.toFixed(2)}%</td>
+                        <td>{r.status}</td>
+                      </tr>
+                    );
+                  })}
+                  <tr>
+                    <th colSpan="3" style={{textAlign:'left'}}>TOTAL</th>
+                    <th>{totals.tEftsl.toFixed(2)}</th>
+                    <th>${numberFormat(totals.tInternal)}</th>
+                    <th>${numberFormat(totals.tGov)}</th>
+                    <th>${numberFormat(totals.tDelta)}</th>
+                    <th>{totals.tPct.toFixed(2)}%</th>
+                    <th></th>
+                  </tr>
+                </tbody>\n              </table>\n            </div>\n          </div>\n\n          <div className=\"card\">\n            <div className=\"muted\">Notes</div>\n            <ul>\n              <li>Aggregation key: <b>Funding Cluster × FOE</b>. Government allocation is <i>Total EFTSL × Indexed Rate</i>.</li>\n              <li>Internal Gov $ can be Σ(commonwealth_contribution) from student enrolment data.</li>\n              <li>Unmapped FOE should be excluded until mapping is confirmed.</li>\n              <li>Status thresholds: <b>Check ≥ {thresholdPct}%</b>, Watch 1–{thresholdPct}%, OK &lt; 1%.</li>\n            </ul>\n          </div>\n        </div>\n      );\n    }\n\n    const root = ReactDOM.createRoot(document.getElementById('app'));\n    root.render(<App />);\n  </script>\n</body>\n</html>\n
