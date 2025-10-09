@@ -7,7 +7,7 @@ select * from raw.student_enrolments_2024;
 ---
 SELECT
   COALESCE(ca.funding_cluster, 'All Clusters') AS funding_cluster,
-  COUNT(*)                             AS student_count,
+  COUNT(*)                             AS count,
   SUM(e.eftsl)                         AS total_eftsl,
   SUM(e.student_contribution)          AS sum_student_contribution,
   SUM(e.commonwealth_contribution)     AS sum_gov_contribution,
