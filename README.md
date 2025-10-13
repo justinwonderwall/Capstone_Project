@@ -22,8 +22,9 @@ The project is organized into the following directory structure:
     |-- ... (other files)
 |-- /notebook
 |   |-- 1_ETL_Pipeline.ipynb
-    |-- 2_Data_Warehouse.ipynb
+    |-- 2_Data_Warehouse.sql
     |-- 3_Data_Modelling.ipynb
+    |-- 4_Dashboard.ppix
 |-- README.md
 ```
 
