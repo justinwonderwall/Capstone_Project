@@ -4,6 +4,7 @@
 
 The aim of this project is to perform a comprehensive ETL (Extract, Transform, Load) process on student course, tuition fee, and government funding data from the University of Western Australia (UWA). The final objective is to generate a clean, standardized dataset suitable for business intelligence analysis. This dataset will be imported into Power BI to build a data model and create visualization dashboards, providing insights into student enrollment, fee structures, and funding allocation.
 
+
 ## Project Structure
 
 The project is organized into the following directory structure:
@@ -38,6 +39,7 @@ The raw data for this project is located in the `/data/raw/` folder and includes
 * `students.csv`: Contains basic student enrollment information, such as course IDs, unit IDs, etc.
 * `government.xlsx`: Contains government funding standards and classification information for different fields of education.
 
+The data presented in this report is exclusively for the purposes of this project and must not be used or referenced for any other project or application. 
 
 ## ETL Process Overview
 
@@ -97,7 +99,7 @@ The final output of the ETL process is a series of CSV files located in the `/da
 * `fact_table.csv`
 
 ## Data Modelling
-
+Two Models are built for the data modelling part which are Logistic Regression, a simple linear model, provides clear interpretability and helps identify which features most strongly influence discrepancies. XGBoost, an advanced tree-based ensemble method, captures more complex and nonlinear relationships within the data. 
 
 ## Data Visualization
 The data visualization was built by Power BI, which connects the PostgreSQL database automated.
@@ -107,10 +109,9 @@ Including：
 
 ## How to Use
 
-1. Ensure you have a Python environment with the necessary libraries installed (Pandas, Numpy).
+1. Ensure you have a Python environment with the necessary libraries installed.
 2. Place the raw data files in the `/data/raw/` directory.
-3. Open and run all cells in the `/notebooks/data_test.ipynb` notebook in sequential order.
+3. Open and run all cells in the `/notebook/1._ETL_Pipeline.ipynb` notebook in sequential order.
 4. The processed data will be automatically saved in the `/data/processed/` folder.
 5. In Power BI, use "Get Data" -> "Text/CSV" to import these processed files and build the data model based on the fact and dimension table relationships.
-
 
